@@ -12,12 +12,8 @@
 
     <title>SmartBin platform</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap theme -->
-    <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!--jQuerry import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="theme.css" rel="stylesheet">
@@ -31,6 +27,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -44,12 +41,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-                <a class="navbar-brand" href="#">SmartBin platform</a>
+                <a class="navbar-brand" href="index.html">SmartBin platform</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#instructions">How it works?</a></li>
+                    <li><a href="Instructions.html">How it works?</a></li>
                     <li><a href="News.html">News</a></li>
                 </ul>
             </div>
@@ -65,32 +62,32 @@
     </div>
     <div class="container">
         <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-down">
+            <form name="singin" class="navbar-form navbar-down">
                 <div class="form-group">
                     Name:
-                    <input type="text" placeholder="name" class="form-control">
+                    <input name="fname" type="text" placeholder="name" class="form-control">
                 </div> <br><br>
                 <div class="form-group">
                     Surname:
-                    <input type="text" placeholder="surname" class="form-control">
+                    <input name="fsurname" type="text" placeholder="surname" class="form-control">
                 </div><br><br>
                 <div class="form-group">
                     E-mail:
-                    <input type="text" placeholder="email" class="form-control">
+                    <input name="femail" type="text" placeholder="email" class="form-control">
                 </div><br><br>
                 <div class="form-group">
                     Username:
-                    <input type="text" placeholder="username" class="form-control">
+                    <input name="fusername" type="text" placeholder="username" class="form-control">
                 </div><br><br>
                 <div class="form-group">
                     Password:
-                    <input type="text" placeholder="password" class="form-control">
+                    <input name="fpassword" type="password" placeholder="password" class="form-control">
                 </div><br><br>
                 <div class="form-group">
                     Confirm password:
-                    <input type="password" placeholder="confirm password" class="form-control">
+                    <input name="fconfpassword" type="password" placeholder="confirm password" class="form-control">
                 </div><br><br>
-                <button type="submit" class="btn btn-success">Submit</button>
+                <input type="button" value="Submit" class="btn btn-success" onclick="signinValidate()">
             </form>
         </div>
         <hr>
@@ -102,5 +99,5 @@
 
 
 </body>
-
+<script language="javascript" type="text/javascript" src="jsfiles/signinEvent.js"></script>
 </html>

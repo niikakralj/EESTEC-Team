@@ -15,6 +15,7 @@ class UserCreate(UserBase):
     email: EmailStr
     password: str 
     username: str = Field(..., min_length=3, max_length=50)
+    card_id: str = None
 
 # Properties to receive via API on update
 class UserUpdate(UserBase):
@@ -25,6 +26,7 @@ class UserInDBBase(UserBase):
     is_active: bool
     username: str = Field(..., min_length=3, max_length=50)
     created_date: datetime.datetime
+    card_id: str = None
     class Config:
         orm_mode = True
 

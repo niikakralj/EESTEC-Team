@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>SmartBin platform</title>
+
+    <!--jQuerry import-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+                <a class="navbar-brand" href="index.html">SmartBin platform</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right">
+                    <button type="submit" class="btn btn-success"><a href="index.html">Log Out</a></button>
+                </form>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Instructions.html">How it works?</a></li>
+                    <li><a href="News.html">News</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Welcome Smith</h1>
+            <p>Here you can check how many points you have collected and which cupons/discounts are available. Please keep in mind that each cupon/discount also has an expiration date.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            Your current points: <h2>"no. of points"</h2>
+        </div>
+        <div>
+            <h2>
+                Your currently available discounts/cupons
+            </h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Store name</th>
+                                <th>Available until</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr bgcolor="#d2f8d2">
+                                <td>1</td>
+                                <td>Mercator</td>
+                                <td>1. 1. 2021</td>
+                                <td>- 25% on one purchase</td>
+                            </tr>
+                            <tr bgcolor="#d2f8d2">
+                                <td>2</td>
+                                <td>Spar</td>
+                                <td>31. 1. 2021</td>
+                                <td>- 50 % on one product</td>
+                            </tr>
+                            <tr bgcolor="#d2f8d2">
+                                <td>3</td>
+                                <td>Turistična agencija Sonček</td>
+                                <td>31. 8. 2021</td>
+                                <td>- 15 % on one trip</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <div class="container-fluid" style="border:2px solid #000000;">
+                        <p>Placeholder for commercials from our sponsors.</p>
+                        <p>Partner 1</p>
+                        <p>Partner 2</p>
+                        <p>Partner 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>
+                Collect new dicounts/cupons
+            </h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Store name</th>
+                                <th>Available until</th>
+                                <th>Value</th>
+                                <th>Cost (no. of points)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr bgcolor="#ffccb">
+                                <td><input type="checkbox" name="cupon1"></td>
+                                <td>Mercator</td>
+                                <td>1. 1. 2021</td>
+                                <td>- 25% on one purchase</td>
+                                <th>2000</th>
+                            </tr>
+                            <tr bgcolor="#ffccb">
+                                <td><input type="checkbox" name="cupon2" ></td>
+                                <td>Hervis</td>
+                                <td>1. 3. 2021</td>
+                                <td>- 30% on one purchase</td>
+                                <th>4000</th>
+                            </tr>
+                            <tr bgcolor="#ffccb">
+                                <td><input type="checkbox" name="cupon3" ></td>
+                                <td>Mladinska knjiga</td>
+                                <td>1. 6. 2021</td>
+                                <td>- 70% on one product</td>
+                                <th>5000</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>
+                My Recycle Bin History
+            </h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Hour</th>
+                                <th>Weight</th>
+                                <th>Type of trash</th>
+                                <th>Cost (no. of points)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr bgcolor="#FAFAD2">
+                                <td>1</td>
+                                <td>5. 11. 2020</td>
+                                <td>15.30</td>
+                                <td>2kg</td>
+                                <td>Plastic</td>
+                                <th>2000</th>
+                            </tr>
+                            <tr bgcolor="#FAFAD2">
+                                <td>2</td>
+                                <td>5. 11. 2020</td>
+                                <td>15.25</td>
+                                <td>1.5kg</td>
+                                <td>Paper</td>
+                                <th>1500</th>
+                            </tr>
+                            <tr bgcolor="#FAFAD2">
+                                <td>3</td>
+                                <td>30. 10. 2020</td>
+                                <td>18.16</td>
+                                <td>3kg</td>
+                                <td>Plastic</td>
+                                <th>2500</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; 2020 SaveTheEarth Community, Inc.</p>
+        </footer>
+    </div>
+
+
+    </body>
+</html>

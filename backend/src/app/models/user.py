@@ -13,3 +13,4 @@ class User(Base):
     password_hash = Column(String, nullable=False)
     is_active = Column(Boolean(), default=True)
     created_date = Column(DateTime, default=func.now(), nullable=False)
+    card_id = Column(String, unique=True, index=True)

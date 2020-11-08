@@ -1,0 +1,5 @@
+azure-cognitiveservices-vision-computervision
+pillow
+matplotlib
+aiohttp_requests
+aiohttp

@@ -16,3 +16,9 @@ body {
 .theme-showcase .navbar .container {
   width: auto;
 }
+.aligncenter {
+  text-align: center;
+}
+p {
+  font-size: 14px;
+}
