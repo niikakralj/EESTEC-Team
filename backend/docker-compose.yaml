@@ -9,10 +9,10 @@ services:
     ports:
       - 443:8000
     environment:
-      - DATABASE_URL=postgresql://smartbin:smartbinadmin@db/smartbindb
-      - MONGODB_URI=mongodb://dragonhack:e0h2fgq3LumCYSrUwiq0J5T5o7QhKZAn7uGQgmq7qNqwsGM14znkiPXwpZf5jXQBC7NW6lLVQHEIAdIk6Tl4dQ==@dragonhack.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@dragonhack@
-      - MSV_SUBSCRIPTION_KEY=cf9a3942000344e9ac4f1a54771f6314
-      - MSV_ENDPOINT=https://dragonhack-img.cognitiveservices.azure.com/
+      - DATABASE_URL=DATABASE_URL
+      - MONGODB_URI=MONGODB_URI
+      - MSV_SUBSCRIPTION_KEY=MSV_SUBSCRIPTION_KEY
+      - MSV_ENDPOINT=MSV_ENDPOINT
   db:
     image: postgres:12.1-alpine
     volumes:
